@@ -1,0 +1,26 @@
+---
+title: 404 Not Found
+permalink: 404.html
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layout.njk" %}
+
+{% block head %}
+  {% seo "" %}
+
+{% endblock %}
+
+{% block body %}
+
+  <div class='main-container mx-auto pt-12'>
+    {% include "header.njk" %}
+
+    <div class="blog-post mt-8">
+      <p>404 Not Found</p>
+    </div>
+  </div>
+  <hr class="my-8"/>
+  {% include "footer.njk" %}
+
+{% endblock %}

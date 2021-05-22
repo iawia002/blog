@@ -13,16 +13,13 @@ module.exports = (eleventyConfig) => {
   ])
 
   eleventyConfig.addPlugin(pluginSEO, {
-    title: "Randy's Blog",
-    author: 'Randy Lu',
-    description: `Randy is blogging about life, tech and music.`,
-    twitter: 'randyloop',
-    url: 'https://lutaonan.com',
-    image: 'https://gbstatic.djyde.com/assets/Snapseed%204.jpg?x-oss-process=style/80'
+    title: "Xinzhao's Blog",
+    author: 'Xinzhao Xu',
+    description: "",
+    url: 'https://xinzhao.me',
   });
 
   eleventyConfig.addPlugin(syntaxHighlight, {
-
     // Change which Eleventy template formats use syntax highlighters
     templateFormats: ["*"], // default
 
@@ -30,7 +27,7 @@ module.exports = (eleventyConfig) => {
     // templateFormats: ["njk", "md"],
 
     // init callback lets you customize Prism
-    init: function({ Prism }) {
+    init: function ({ Prism }) {
 
     },
 
@@ -69,5 +66,30 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addPassthroughCopy("_redirects");
+  eleventyConfig.addPassthroughCopy("src/img");
+
+  eleventyConfig.addFilter("filterTagList", tags => {
+    // should match the list in tags.njk
+    return (tags || []).filter(tag => ["post"].indexOf(tag) === -1);
+  })
+
+  // Create an array of all tags
+  eleventyConfig.addCollection("tagList", function (collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(item => {
+      (item.data.tags || []).forEach(tag => tagSet.add(tag));
+    });
+
+    return [...tagSet];
+  });
+
+  const slugify = require("slugify");
+  eleventyConfig.addFilter("slug", (input) => {
+    const options = {
+      replacement: "-",
+      remove: /[&,+()$~%.'":*?<>{}]/g,
+      lower: true
+    };
+    return slugify(input, options);
+  });
 }

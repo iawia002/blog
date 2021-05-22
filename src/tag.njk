@@ -1,0 +1,30 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+  - post
+  addAllPagesToCollections: true
+eleventyComputed:
+  title: "{{ tag }} - 标签"
+permalink: /tags/{{ tag | slug }}/
+---
+
+{% extends "layout.njk" %}
+
+{% block head %}
+  {% seo "" %}
+{% endblock %}
+
+{% block body %}
+  <div class='main-container mx-auto pt-12'>
+    {% include "header.njk" %}
+
+    <h1 class="logo text-green-700 text-lg mb-2 mt-8">{{ tag }}</h1>
+    {% set postslist = collections[ tag ] %}
+    {% include "postslist.njk" %}
+  </div>
+  <hr class="my-8"/>
+  {% include "footer.njk" %}
+{% endblock %}

@@ -3,12 +3,12 @@
   "permalink": "rss.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "Randy's Blog",
-    "subtitle": "Randy is blogging about life, tech and music.",
-    "url": "https://lutaonan.com/",
-    "feedUrl": "https://lutaonan.com/rss.xml",
+    "title": "Xinzhao's Blog",
+    "subtitle": "",
+    "url": "https://xinzhao.me/",
+    "feedUrl": "https://xinzhao.me/rss.xml",
     "author": {
-      "name": "Randy"
+      "name": "Xinzhao Xu"
     }
   }
 }
@@ -19,12 +19,12 @@
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.post | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
-  {%- for post in collections.blog | reverse %}
+  {%- for post in collections.post | reverse %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>

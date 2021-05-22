@@ -1,17 +1,21 @@
 # my blog
 
-Built with Eleventy, TailwindCSS.
+Based on the [djyde/blog-2020](https://github.com/djyde/blog-2020) project, built with Eleventy and TailwindCSS.
 
-https://lutaonan.com
+https://xinzhao.me
 
-## Build
+## Getting Started
+
+dev:
 
 ```bash
-yarn
+yarn dev:css
 
 yarn dev
+```
 
-yarn build:css # build css files
+build:
 
+```bash
 yarn build # build the whole project
 ```

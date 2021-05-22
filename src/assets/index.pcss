@@ -22,8 +22,12 @@ p {
   @apply my-4;
 }
 
+.tags a {
+  @apply mr-2;
+}
+
 .blog-post h1, h2, h3, h4 {
-  @apply text-red-900 mb-2 font-bold mt-2;
+  @apply text-green-700 mb-2 font-bold mt-2;
 }
 
 .blog-post {
@@ -62,7 +66,7 @@ p {
   }
 
   & code {
-    @apply bg-gray-300 text-sm;
+    @apply bg-gray-300 text-sm p-1;
   }
 }
 
@@ -72,7 +76,11 @@ p {
   position: absolute;
   bottom: 2px;
   left: 4px;
-  @apply bg-red-900 bg-opacity-25 w-full h-2;
+  @apply bg-green-700 bg-opacity-25 w-full h-2 transition duration-300 ease-in-out;
+}
+
+.blog-post a:hover:after {
+  @apply bg-green-900 bg-opacity-25;
 }
 
 .blog-post ul, ol {
@@ -96,7 +104,7 @@ p {
 }
 
 blockquote {
-  @apply border-l-4 pl-4 border-red-900 text-gray-700 my-4;
+  @apply border-l-4 pl-4 border-green-700 text-gray-700 my-4;
 }
 
 iframe {
@@ -140,14 +148,13 @@ iframe {
 }
 
 .table-of-contents {
-    @apply bg-gray-50 mb-8 p-4 text-sm;
+  @apply bg-gray-50 mb-8 p-4 text-sm;
 
   & .toc-container-header {
     @apply mb-4 font-bold;
   }
 
   & ul {
-
     @apply mt-2;
 
     & a::after {
@@ -155,7 +162,7 @@ iframe {
     }
 
     & li {
-      @apply text-red-900;
+      @apply text-green-700;
     }
   }
 }
