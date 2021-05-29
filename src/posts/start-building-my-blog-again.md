@@ -11,7 +11,7 @@ tags:
 
 技术层面用的都是当时很“时髦”的技术：前后端分离，后端是用 Python 写的，使用了 Flask 框架和 PostgreSQL 数据库，前端是 TypeScript + React + Sass + CSS Modules，代码开源在 [GitHub](https://github.com/iawia002/Diana)，整个博客放在一台阿里云的机器上面。
 
-![](/img/in-post/diana.jpeg)
+![](/img/start-building-my-blog-again/diana.jpeg)
 <p class="text-center text-gray-500">上一代博客的截图</p>
 
 整个博客我还是很满意的，唯一的问题就在文章内容的管理上，和使用 static site generator 构建的博客不同，我的文章是单独存放在线上的 PostgreSQL 数据库中的，备份和维护都很麻烦，完全不如静态博客那样写完直接提交 git 方便，所以现在还是决定换成静态博客，文章和代码都放在 GitHub 上，不用再单独备份了，部署也非常方便，回归本质，不搞那些花里胡哨的东西了。
