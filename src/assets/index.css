@@ -553,8 +553,17 @@ video {
   border-color: rgba(56, 142, 60, var(--tw-border-opacity));
 }
 
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgba(224, 224, 224, var(--tw-border-opacity));
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-l-4 {
@@ -643,6 +652,10 @@ video {
   list-style-type: disc;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -697,6 +710,10 @@ video {
   padding: 0px;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -704,6 +721,11 @@ video {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .px-4 {
@@ -945,6 +967,36 @@ p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.125rem;
+}
+
+.blog-post table {
+  --tw-border-opacity: 1;
+  border-color: rgba(224, 224, 224, var(--tw-border-opacity));
+  border-width: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%
+}
+
+.blog-post table th {
+  border-width: 1px;
+  padding: 0.5rem;
+}
+
+.blog-post table td {
+  border-width: 1px
+}
+
+.blog-post table td pre {
+  margin: 0px !important;
+}
+
+.blog-post table td p {
+  margin: 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .blog-post a:after {
