@@ -553,11 +553,6 @@ video {
   border-color: rgba(56, 142, 60, var(--tw-border-opacity));
 }
 
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgba(224, 224, 224, var(--tw-border-opacity));
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -650,6 +645,10 @@ video {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .m-0 {
@@ -970,8 +969,6 @@ p {
 }
 
 .blog-post table {
-  --tw-border-opacity: 1;
-  border-color: rgba(224, 224, 224, var(--tw-border-opacity));
   border-width: 1px;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -979,12 +976,17 @@ p {
 }
 
 .blog-post table th {
+  --tw-border-opacity: 1;
+  border-color: rgba(224, 224, 224, var(--tw-border-opacity));
   border-width: 1px;
   padding: 0.5rem;
 }
 
 .blog-post table td {
-  border-width: 1px
+  --tw-border-opacity: 1;
+  border-color: rgba(224, 224, 224, var(--tw-border-opacity));
+  border-width: 1px;
+  padding: 0.5rem
 }
 
 .blog-post table td pre {
@@ -1031,6 +1033,7 @@ p {
 
 .blog-post ol {
   list-style-type: decimal;
+  margin-left: 2rem;
 }
 
 .blog-post ul {

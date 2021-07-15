@@ -70,14 +70,14 @@ p {
   }
 
   & table {
-    @apply w-full border border-gray-300 my-4;
+    @apply w-full border my-4;
 
     & th {
-      @apply p-2 border;
+      @apply border p-2 border-gray-300;
     }
 
     & td {
-      @apply border;
+      @apply border p-2 border-gray-300;
 
       & pre {
         @apply m-0 !important;
@@ -108,7 +108,7 @@ p {
 }
 
 .blog-post ol {
-  @apply list-decimal;
+  @apply list-decimal ml-8;
 }
 
 .blog-post ul {
