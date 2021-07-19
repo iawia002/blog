@@ -8,14 +8,10 @@
   <div class="main-container mx-auto">
     {% include "header.njk" %}
 
-    {% include "introduction.njk" %}
-
-    <h1 class="logo text-green-700 text-lg mb-2 mt-8">Posts</h1>
+    <h1 class="title text-green-700 text-xl mb-2 mt-8">Posts</h1>
     {% set postslist = collections.post %}
     {% include "postslist.njk" %}
   </div>
 
-  <div class="my-24">
-    {% include "footer.njk" %}
-  </div>
+  {% include "footer.njk" %}
 {% endblock %}

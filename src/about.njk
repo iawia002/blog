@@ -13,7 +13,14 @@ title: 关于我
   <div class='main-container mx-auto'>
     {% include "header.njk" %}
 
-    {% include "introduction.njk" %}
+    <section>
+      <div class="w-32 h-32 mx-auto rounded-full bg-cover bg-center mt-8" style="background-image: url(/img/avatar-blue.png)"}}></div>
+    </section>
+
+    <section class='text-sm leading-relaxed my-8 blog-post'>
+      <p>Hi，我叫徐信钊，常用 <span class="text-green-700">iawia002</span> 这个 ID 在网上冲浪，现在是一名程序员，在<a rel="noopener noreferrer" target="_blank" href="https://bytedance.com">字节跳动</a>从事云原生相关的工作。</p>
+      <p>写博客并不全因为我是程序员，除了编程相关的内容，以后也会分享些生活上的流水帐和其它一些有趣的事情（这种内容可能占大部分 🤣）；最近在学摄影，以后拍到好看的照片也会发上来。</p>
+    </section>
 
     <section class='text-sm leading-relaxed mb-8 blog-post'>
       <p>联系我：</p>
@@ -31,6 +38,5 @@ title: 关于我
 
     {% include "disqus.njk" %}
   </div>
-  <hr class="my-8"/>
   {% include "footer.njk" %}
 {% endblock %}

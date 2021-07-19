@@ -21,10 +21,10 @@ permalink: /tags/{{ tag | slug }}/
   <div class='main-container mx-auto'>
     {% include "header.njk" %}
 
-    <h1 class="logo text-green-700 text-lg mb-2 mt-8">{{ tag }}</h1>
+    <h1 class="title text-green-700 text-xl mb-2 mt-8">{{ tag }}</h1>
     {% set postslist = collections[ tag ] %}
     {% include "postslist.njk" %}
   </div>
-  <hr class="my-8"/>
+
   {% include "footer.njk" %}
 {% endblock %}

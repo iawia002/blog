@@ -12,15 +12,14 @@ title: 标签
   <div class='main-container mx-auto'>
     {% include "header.njk" %}
 
-    <h1 class="logo text-green-700 text-lg mb-2 mt-8">所有标签</h1>
+    <h1 class="title text-green-700 text-xl mb-2 mt-8">Tags</h1>
     <div class="blog-post tags">
       {% for tag in collections.tagList | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="logo text-base">{{ tag }}</a>
+        <a href="{{ tagUrl | url }}" class="text-base">{{ tag }}</a>
       {% endfor %}
     </div>
-
   </div>
-  <hr class="my-8"/>
+
   {% include "footer.njk" %}
 {% endblock %}
