@@ -66,6 +66,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPlugin(pluginRss);
 
+  eleventyConfig.addPassthroughCopy("src/assets/index.css");
   eleventyConfig.addPassthroughCopy("src/img");
 
   eleventyConfig.addFilter("filterTagList", tags => {
