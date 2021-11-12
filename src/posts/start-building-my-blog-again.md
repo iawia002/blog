@@ -18,4 +18,4 @@ tags:
 
 在网上冲了一圈浪之后，本来打算用 [Track3/hermit](https://github.com/Track3/hermit) 或者 [Huxpro/huxpro.github.io](https://github.com/Huxpro/huxpro.github.io) 来改一下，两个都是非常不错的风格，一个基于 Hugo，一个基于 Jekyll，但后面想起了之前看到过的 [Randy 的博客](https://lutaonan.com)，真的是非常好看的风格，很简洁，又有高级感，然后初步尝试了下这个博客用的 [Eleventy](https://www.11ty.dev) 和 [TailwindCSS](https://tailwindcss.com)，我也挺喜欢的，所以最后就基于 Randy 的 [djyde/blog-2020](https://github.com/djyde/blog-2020) 改出了我现在这个博客，风格基本上没变，配色改成我自己喜欢的颜色，后面可能会再调整一下，功能层面的话增加了[标签](/tags)页面，我自己是很喜欢用标签来管理内容的，所以把这个加上了，然后还有一些很细碎的改动，具体可以看 [iawia002/blog](https://github.com/iawia002/blog) repo 的 commit 记录。
 
-这次绝对是我最后一次折腾博客系统 🤥，这个博客我不保证能经常更新，但是我保证它能一直存在，能一直被访问到。
+这次绝对是我最后一次折腾博客系统 🤥，这个博客我不保证能经常更新，但是我保证它能一直存在，能一直被访问到，欢迎来玩儿。
