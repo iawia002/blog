@@ -61,13 +61,14 @@ module.exports = (eleventyConfig) => {
     includeLevel: [1, 2, 3, 4],
     containerHeaderHtml: `<div class="toc-container-header">索引</div>`
   })
-
   eleventyConfig.setLibrary('md', markdownItLib)
 
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addPassthroughCopy("src/assets/index.css");
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/assets/index.css");
+  // Eleventy will not add a watch for files or folders that are in .gitignore.
+  eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addFilter("filterTagList", tags => {
     // should match the list in tags.njk
