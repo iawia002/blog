@@ -75,13 +75,16 @@ p {
 
   & table {
     @apply w-full border my-4;
+    table-layout: fixed;
 
     & th {
       @apply border p-2 border-gray-300;
+      word-break: break-word;
     }
 
     & td {
       @apply border p-2 border-gray-300;
+      word-break: break-word;
 
       & pre {
         @apply m-0 !important;
