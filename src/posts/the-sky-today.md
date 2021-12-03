@@ -1,5 +1,5 @@
 ---
-title: 分享今日份的天空
+title: 今日份的天空
 layout: post.njk
 date: 2020-08-24
 tags:
@@ -8,10 +8,8 @@ tags:
 - 摄影
 ---
 
-今天这天气真是绝了，天空也太干净了吧（还好下班早，不然都看不到）
+还好今天下班早，不然都看不到
 
 ![](/img/the-sky-today/20200824_193654.jpg)
-
-路过旁边阿里的大楼也拍了一张
-
 ![](/img/the-sky-today/20200824_195336.jpg)
+<p class="text-center text-gray-500">旁边阿里的大楼</p>
