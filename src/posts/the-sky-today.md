@@ -4,7 +4,6 @@ layout: post.njk
 date: 2020-08-24
 tags:
 - post
-- 生活
 - 摄影
 ---
 
