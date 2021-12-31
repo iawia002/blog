@@ -10,7 +10,7 @@ tags:
 ![](/img/3rd-anren-biennale/IMG_0439.jpg)
 
 ![](/img/3rd-anren-biennale/IMG_0449.jpg)
-<p class="text-center text-gray-500">全场我最喜欢的装置，你靠近它就会响，从旁边走过或者跑过就像风铃一样一片一片响，赛博朋克电子风铃，是那种 100 年后人类和 AI 开战人类战败，末世废土上肯定会出现的装置</p>
+<p class="caption">全场我最喜欢的装置，你靠近它就会响，从旁边走过或者跑过就像风铃一样一片一片响，赛博朋克电子风铃，是那种 100 年后人类和 AI 开战人类战败，末世废土上肯定会出现的装置</p>
 
 ![](/img/3rd-anren-biennale/IMG_0452.jpg)
 
@@ -78,7 +78,7 @@ tags:
 ![](/img/3rd-anren-biennale/IMG_0573.jpg)
 
 ![](/img/3rd-anren-biennale/IMG_0576.jpg)
-<p class="text-center text-gray-500">一位很拽的小朋友</p>
+<p class="caption">一位很拽的小朋友</p>
 
 ![](/img/3rd-anren-biennale/IMG_0579.jpg)
 ![](/img/3rd-anren-biennale/IMG_0580.jpg)

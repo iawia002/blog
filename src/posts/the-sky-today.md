@@ -11,4 +11,4 @@ tags:
 
 ![](/img/the-sky-today/20200824_193654.jpg)
 ![](/img/the-sky-today/20200824_195336.jpg)
-<p class="text-center text-gray-500">旁边阿里的大楼</p>
+<p class="caption">旁边阿里的大楼</p>
