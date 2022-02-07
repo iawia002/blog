@@ -6,10 +6,8 @@ const dayjs = require('dayjs')
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats([
-    'css',
     'md',
     'njk',
-    'ico',
   ])
 
   eleventyConfig.addPlugin(pluginSEO, {
@@ -43,7 +41,6 @@ module.exports = (eleventyConfig) => {
     lineSeparator: "<br>",
   });
 
-
   eleventyConfig.addNunjucksShortcode('formatDate', (date, format) => {
     if (!format) {
       return dayjs(date).format('YYYY-MM-DD')
@@ -67,6 +64,8 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/assets/index.css");
+  eleventyConfig.addPassthroughCopy("src/assets/material.css");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
   // Eleventy will not add a watch for files or folders that are in .gitignore.
   eleventyConfig.setUseGitIgnore(false);
 
@@ -83,15 +82,5 @@ module.exports = (eleventyConfig) => {
     });
 
     return [...tagSet];
-  });
-
-  const slugify = require("slugify");
-  eleventyConfig.addFilter("slug", (input) => {
-    const options = {
-      replacement: "-",
-      remove: /[&,+()$~%.'":*?<>{}]/g,
-      lower: true
-    };
-    return slugify(input, options);
   });
 }

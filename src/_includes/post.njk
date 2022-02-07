@@ -14,7 +14,7 @@
       <h2 class="text-2xl tracking-wide text-gray-900 font-bold">{{ title }}</h2>
       <div class="blog-post tags">
         {%- for tag in tags | filterTagList -%}
-        {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+        {%- set tagUrl %}/tags/{{ tag }}/{% endset -%}
         <a href="{{ tagUrl | url }}">{{ tag }}</a>
         {%- endfor %}
       </div>

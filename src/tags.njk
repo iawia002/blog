@@ -15,7 +15,7 @@ title: 标签
     <h1 class="title text-green-700 text-xl mb-2 mt-8">Tags</h1>
     <div class="blog-post tags">
       {% for tag in collections.tagList | filterTagList %}
-        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
         <a href="{{ tagUrl | url }}">{{ tag }}</a>
       {% endfor %}
     </div>
