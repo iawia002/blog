@@ -6,8 +6,9 @@ module.exports = {
     require('postcss-preset-env')({
       stage: 1
     }),
+    require('tailwindcss/nesting'),
     require('tailwindcss')({
-      purge: [
+      content: [
         './src/**/*.njk',
         './src/**/*.pcss'
       ],
