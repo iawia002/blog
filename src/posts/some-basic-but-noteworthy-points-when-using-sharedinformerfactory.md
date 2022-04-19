@@ -213,3 +213,28 @@ informerFactory.Start(stopch)
 </table>
 
 上面错误的方法中，`informerFactory` 不会启动也不会缓存任何东西，`podLister` 会永远返回空结果。
+
+在一些通用框架的场景下也可以使用 `ForResource` 方法来手动“注册”一个资源，它其实也是调用了对应资源的 `Informer` 方法：
+
+```go
+type SharedInformerFactory interface {
+	...
+	ForResource(resource schema.GroupVersionResource) (GenericInformer, error)
+}
+
+// ForResource gives generic access to a shared informer of the matching type
+func (f *sharedInformerFactory) ForResource(resource schema.GroupVersionResource) (GenericInformer, error) {
+	switch resource {
+	// Group=snapshot.storage.k8s.io, Version=v1beta1
+	case v1beta1.SchemeGroupVersion.WithResource("volumesnapshots"):
+		return &genericInformer{resource: resource.GroupResource(), informer: f.Snapshot().V1beta1().VolumeSnapshots().Informer()}, nil
+	case v1beta1.SchemeGroupVersion.WithResource("volumesnapshotclasses"):
+		return &genericInformer{resource: resource.GroupResource(), informer: f.Snapshot().V1beta1().VolumeSnapshotClasses().Informer()}, nil
+	case v1beta1.SchemeGroupVersion.WithResource("volumesnapshotcontents"):
+		return &genericInformer{resource: resource.GroupResource(), informer: f.Snapshot().V1beta1().VolumeSnapshotContents().Informer()}, nil
+
+	}
+
+	return nil, fmt.Errorf("no informer found for %v", resource)
+}
+```
