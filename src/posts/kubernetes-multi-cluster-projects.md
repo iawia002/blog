@@ -225,7 +225,7 @@ Karmada 主要有三个组件：
 Karmada 的一些基本概念：
 
 * 资源模板（Resource Template）：Karmada 使用 K8s 原生 API 定义作为资源模板，便于快速对接 K8s 生态工具链
-* 分发策略（Propagaion Policy）：Karmada 提供独立的策略 API，用来配置资源分发策略
+* 分发策略（Propagation Policy）：Karmada 提供独立的策略 API，用来配置资源分发策略
 * 差异化策略（Override Policy）：Karmada 提供独立的差异化 API，用来配置与集群相关的差异化配置，比如配置不同集群使用不同的镜像
 
 ![](/img/kubernetes-multi-cluster-projects/karmada-resource-relation.png)
@@ -245,7 +245,7 @@ spec:
 
 但是有一个不一样的点是，Karmada 的 `Cluster` 资源有两种 sync 模式：`Push` 和 `Pull`；`Push` 就是最普通、最常见的方式，host 集群的 Karmada 组件会负责同步并更新这类集群的状态；`Pull` 模式的 member 集群上会运行一个 `karmada-agent` 组件，这个组件会负责收集自己的状态并且更新 host 集群的相应的 `Cluster` 资源状态。
 
-### Propagaion Policy
+### Propagation Policy
 
 在 Karmada 中分发资源到 member 集群需要配置这个单独 `PropagationPolicy` CR；以下面的 nginx 应用为例，首先是 Resource Template，这个就是普通的 K8s `Deployment`：
 
