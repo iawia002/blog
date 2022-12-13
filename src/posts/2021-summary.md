@@ -15,7 +15,7 @@ tags:
 
 ## 生活
 
-我一直都很喜欢看 Google 每年年底都会发布的 [Year in Search](https://about.google/stories/year-in-search/) 视频，每年都会有一个年度关键词，今年的是 healing：
+我一直都很喜欢看 Google 每年年底都会发布的 [Year in Search](https://about.google/stories/year-in-search/) 视频，每年都会有一个年度关键词，今年的是 <span class="keyword">healing</span>：
 
 > 这一年，人们都在设法克服个人和全球面临的种种挑战，“healing”（治愈）一词的全球搜索量达到了前所未有的高度。
 
