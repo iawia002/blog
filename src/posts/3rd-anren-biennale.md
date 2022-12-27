@@ -1,5 +1,5 @@
 ---
-title: 🌠 安仁双年展
+title: 安仁双年展
 layout: post.njk
 date: 2021-12-19
 tags:
