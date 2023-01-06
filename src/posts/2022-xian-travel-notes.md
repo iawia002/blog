@@ -78,7 +78,7 @@ tags:
 
 早上去附近的书店逛了逛，主要是找找明信片，其实之前旅游都没有寄明信片这个想法，是最近跟一个朋友学的，感觉这件事好有意义，像是把旅行的印记和记忆实体化了，希望以后出去旅行也都去找一些自己喜欢又有当地特色的明信片寄出去，给朋友，给自己；不过现在很有可能收不到，明信片容易寄丢，感觉邮政也不重视这个，有些东西还没到消亡的时候就没有生命了，总之能收到就收，收不到就算了，我在寄出去之前都会拍照（也是跟那个朋友学的），如果很久了还没收到的话就把图片发给对方。
 
-下午在西安美术馆看[山海心相：邵泳当代水墨展](https://xinzhao.me/posts/wisdom-beyond-the-heart-shao-yong-contemporary-ink-painting-exhibition/)，我个人是非常喜欢这个展览的作品，作品本身和它描述的概念和场景都非常宏大，我也拍了些作品的照片，后续可能单独发一篇博客。
+下午在西安美术馆看[山海心相——邵泳当代水墨展](https://xinzhao.me/posts/wisdom-beyond-the-heart-shao-yong-contemporary-ink-painting-exhibition/)，我个人是非常喜欢这个展览的作品，作品本身和它描述的概念和场景都非常宏大，我也拍了些作品的照片，后续可能单独发一篇博客。
 
 ![](/img/2022-xian-travel-notes/IMG_1730.jpg)
 ![](/img/2022-xian-travel-notes/IMG_1731.jpg)
