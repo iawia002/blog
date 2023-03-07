@@ -1,8 +1,7 @@
-const pluginRss = require('@11ty/eleventy-plugin-rss')
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSEO = require("eleventy-plugin-seo");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-
-const dayjs = require('dayjs')
+const dayjs = require("dayjs");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats([

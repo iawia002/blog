@@ -8,7 +8,7 @@
     "build": "rm -rf _site && npm run build:css && npm run eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^2.0.0"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^1.2.0",
@@ -17,11 +17,11 @@
     "autoprefixer": "^10.4.13",
     "dayjs": "^1.11.7",
     "eleventy-plugin-seo": "^0.5.2",
-    "markdown-it-anchor": "^8.6.6",
+    "markdown-it-anchor": "^8.6.7",
     "markdown-it-table-of-contents": "^0.6.0",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "postcss-preset-env": "^7.8.3",
-    "tailwindcss": "^3.2.4"
+    "postcss-preset-env": "^8.0.1",
+    "tailwindcss": "^3.2.7"
   }
 }
